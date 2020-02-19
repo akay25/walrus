@@ -5,9 +5,8 @@ from flask_cors import CORS
 app = Flask(__name__)
 CORS(app)
 
-# import declared routes
-import routes.common
-import routes.auth.login
+# Importing routes
+from routes import user, common
 
 if __name__ == "__main__":
     WEB_HOST = env("WEB_IP")
