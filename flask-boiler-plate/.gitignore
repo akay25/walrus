@@ -1,0 +1,29 @@
+# Byte-compiled / optimized
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Intellij
+*.iml
+.idea/
+.vscode
+.mypy_cache
+
+# Mac
+.DS_Store
+
+# Secrets
+secret
+public
+
+# ENV files
+.env
+.remote.env
+.docker.env
+
+# Custom scripts
+deploy.sh
+/docker-compose.yml
+
+# Logs
+*.log
