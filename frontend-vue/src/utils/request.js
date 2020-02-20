@@ -3,7 +3,7 @@ import { MessageBox, Message } from "element-ui";
 import store from "@/store";
 import { getToken } from "@/utils/auth";
 
-const url = "http://localhost:5000";
+const url = "http://localhost:5001";
 const service = axios.create({
   baseURL: url,
   timeout: 5000

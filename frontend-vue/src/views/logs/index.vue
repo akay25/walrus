@@ -4,8 +4,7 @@
 
 <script>
 export default {
-  name: "Logs",
-  data() {}
+  name: "Logs"
 };
 </script>
 

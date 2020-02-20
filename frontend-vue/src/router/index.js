@@ -73,14 +73,14 @@ export const constantRoutes = [
         path: "dashboard",
         component: () => import("@/views/dashboard/index"),
         name: "Dashboard",
-        meta: { title: "Dashboard", icon: "dashboard", affix: true }
+        meta: { title: "Dashboard", icon: "grid-outline", affix: true }
       }
     ]
   },
   {
     path: "/vpn-and-proxies/",
     component: Layout,
-    meta: { title: "VPNs and Proxies", icon: "international" },
+    meta: { title: "VPNs and Proxies", icon: "earth-outline" },
     children: [
       {
         path: "vpns",
@@ -104,46 +104,43 @@ export const constantRoutes = [
         path: "/user-credentials",
         component: () => import("@/views/user-credentials/index"),
         name: "User Credentials",
-        meta: { title: "User Credentials", icon: "password", affix: true }
+        meta: { title: "User Credentials", icon: "lock-open-outline", affix: true }
       }
     ]
   },
   {
     path: "/links/",
     component: Layout,
-    meta: { title: "Facebook Links", icon: "facebook" },
     children: [
       {
         path: "/links",
         component: () => import("@/views/facebook-links/index"),
         name: "Facebook links",
-        meta: { title: "Facebook links", icon: "password", affix: true }
+        meta: { title: "Facebook Links", icon: "link-outline", affix: true }
       }
     ]
   },
   {
     path: "/modules/",
     component: Layout,
-    meta: { title: "Modules", icon: "example" },
     children: [
       {
         path: "/modules",
         component: () => import("@/views/modules/index"),
         name: "Modules",
-        meta: { title: "Modules", icon: "password", affix: true }
+        meta: { title: "Modules", icon: "layers-outline", affix: true }
       }
     ]
   },
   {
     path: "/settings/",
     component: Layout,
-    meta: { title: "Settings", icon: "example" },
     children: [
       {
         path: "/settings",
         component: () => import("@/views/settings/index"),
         name: "Settings",
-        meta: { title: "Settings", icon: "password", affix: true }
+        meta: { title: "Settings", icon: "hammer-outline", affix: true }
       }
     ]
   }

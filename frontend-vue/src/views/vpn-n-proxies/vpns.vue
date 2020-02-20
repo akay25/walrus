@@ -4,8 +4,7 @@
 
 <script>
 export default {
-  name: "VPNs",
-  data() {}
+  name: "VPNs"
 };
 </script>
 

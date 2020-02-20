@@ -4,8 +4,7 @@
 
 <script>
 export default {
-  name: "Proxies",
-  data() {}
+  name: "Proxies"
 };
 </script>
 

@@ -4,8 +4,7 @@
 
 <script>
 export default {
-  name: "FacebookLinks",
-  data() {}
+  name: "FacebookLinks"
 };
 </script>
 
