@@ -78,25 +78,6 @@ export const constantRoutes = [
     ]
   },
   {
-    path: "/vpn-and-proxies/",
-    component: Layout,
-    meta: { title: "VPNs and Proxies", icon: "earth-outline" },
-    children: [
-      {
-        path: "vpns",
-        component: () => import("@/views/vpn-n-proxies/vpns"),
-        name: "VPNs List",
-        meta: { title: "VPNs List", affix: true }
-      },
-      {
-        path: "proxies",
-        component: () => import("@/views/vpn-n-proxies/proxies"),
-        name: "Proxies",
-        meta: { title: "Proxies", affix: true }
-      }
-    ]
-  },
-  {
     path: "/user-credentials/",
     component: Layout,
     children: [
@@ -129,6 +110,25 @@ export const constantRoutes = [
         component: () => import("@/views/modules/index"),
         name: "Modules",
         meta: { title: "Modules", icon: "layers-outline", affix: true }
+      }
+    ]
+  },
+  {
+    path: "/vpn-and-proxies/",
+    component: Layout,
+    meta: { title: "VPNs and Proxies", icon: "earth-outline" },
+    children: [
+      {
+        path: "vpns",
+        component: () => import("@/views/vpn-n-proxies/vpns"),
+        name: "VPNs List",
+        meta: { title: "VPNs List", affix: true }
+      },
+      {
+        path: "proxies",
+        component: () => import("@/views/vpn-n-proxies/proxies"),
+        name: "Proxies",
+        meta: { title: "Proxies", affix: true }
       }
     ]
   },
