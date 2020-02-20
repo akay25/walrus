@@ -6,7 +6,7 @@ app = Flask(__name__)
 CORS(app)
 
 # Importing routes
-from routes import user, common
+from routes import user, common, facebook_links
 
 if __name__ == "__main__":
     WEB_HOST = env("WEB_IP")
