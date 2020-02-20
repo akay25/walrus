@@ -4,8 +4,7 @@
 
 <script>
 export default {
-  name: "Modules",
-  data() {}
+  name: "Modules"
 };
 </script>
 
