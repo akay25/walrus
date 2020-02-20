@@ -6,9 +6,6 @@
       class="hamburger-container"
       @toggleClick="toggleSideBar"
     />
-
-    <breadcrumb id="breadcrumb-container" class="breadcrumb-container" />
-
     <div class="right-menu">
       <template v-if="device !== 'mobile'">
         <error-log class="errLog-container right-menu-item hover-effect" />
@@ -37,13 +34,11 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Breadcrumb from "@/components/Breadcrumb";
 import Hamburger from "@/components/Hamburger";
 import ErrorLog from "@/components/ErrorLog";
 
 export default {
   components: {
-    Breadcrumb,
     Hamburger,
     ErrorLog
   },

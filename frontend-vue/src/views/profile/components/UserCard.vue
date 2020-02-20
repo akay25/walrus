@@ -6,20 +6,29 @@
 
     <div class="user-profile">
       <div class="box-center">
-        <pan-thumb :image="user.avatar" :height="'100px'" :width="'100px'" :hoverable="false">
+        <pan-thumb
+          :image="user.avatar"
+          :height="'100px'"
+          :width="'100px'"
+          :hoverable="false"
+        >
           <div>Hello</div>
           {{ user.role }}
         </pan-thumb>
       </div>
       <div class="box-center">
         <div class="user-name text-center">{{ user.name }}</div>
-        <div class="user-role text-center text-muted">{{ user.role | uppercaseFirst }}</div>
+        <div class="user-role text-center text-muted">
+          {{ user.role | uppercaseFirst }}
+        </div>
       </div>
     </div>
 
     <div class="user-bio">
       <div class="user-education user-bio-section">
-        <div class="user-bio-section-header"><svg-icon icon-class="education" /><span>Education</span></div>
+        <div class="user-bio-section-header">
+          <ion-icon name="book-outline" /><span>Education</span>
+        </div>
         <div class="user-bio-section-body">
           <div class="text-muted">
             JS in Computer Science from the University of Technology
@@ -28,7 +37,9 @@
       </div>
 
       <div class="user-skills user-bio-section">
-        <div class="user-bio-section-header"><svg-icon icon-class="skill" /><span>Skills</span></div>
+        <div class="user-bio-section-header">
+          <ion-icon name="barbell-outline" /><span>Skills</span>
+        </div>
         <div class="user-bio-section-body">
           <div class="progress-item">
             <span>Vue</span>
@@ -53,7 +64,7 @@
 </template>
 
 <script>
-import PanThumb from '@/components/PanThumb'
+import PanThumb from "@/components/PanThumb";
 
 export default {
   components: { PanThumb },
@@ -62,15 +73,15 @@ export default {
       type: Object,
       default: () => {
         return {
-          name: '',
-          email: '',
-          avatar: '',
-          roles: ''
-        }
+          name: "",
+          email: "",
+          avatar: "",
+          roles: ""
+        };
       }
     }
   }
-}
+};
 </script>
 
 <style lang="scss" scoped>
