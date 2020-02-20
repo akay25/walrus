@@ -104,7 +104,7 @@ export const constantRoutes = [
         path: "/user-credentials",
         component: () => import("@/views/user-credentials/index"),
         name: "User Credentials",
-        meta: { title: "User Credentials", icon: "lock-open-outline", affix: true }
+        meta: { title: "User Credentials", icon: "key-outline", affix: true }
       }
     ]
   },
